@@ -11,7 +11,7 @@ $ npm install --save bundle-size
 ## Usage
 
 ```js
-const bundleSize = require('../');
+const bundleSize = require('bundle-size');
 
 bundleSize('react').then((results) => {
   console.log(results);

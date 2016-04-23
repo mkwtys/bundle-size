@@ -5,4 +5,4 @@ const bundleSize = require('../');
 bundleSize('react').then((results) => {
   console.log(results);
 });
-//-> { modules: 'react', bundle: '116.39 kB' }
+//-> { modules: 'react', bundle: '116.39 kB', minify: '57.91 kB' }

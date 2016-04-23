@@ -2,10 +2,10 @@
 
 Show bundle file size of npm modules
 
-## Install
+## Installation
 
 ```sh
-$ npm install --save bundle-size
+$ npm install bundle-size
 ```
 
 ## Usage

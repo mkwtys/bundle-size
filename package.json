@@ -9,7 +9,7 @@
   "dependencies": {
     "browserify": "13.0.0",
     "pretty-bytes": "3.0.1",
-    "through2": "2.0.1"
+    "uglify-js": "2.6.2"
   },
   "devDependencies": {
     "mocha": "2.4.5"

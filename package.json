@@ -20,7 +20,9 @@
   "homepage": "https://github.com/mkwtys/bundle-size#readme",
   "keywords": [
     "bundle",
-    "size"
+    "gzip",
+    "size",
+    "uglify"
   ],
   "license": "MIT",
   "main": "lib/index.js",

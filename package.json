@@ -17,6 +17,9 @@
   "directories": {
     "test": "test"
   },
+  "files": [
+    "lib/"
+  ],
   "homepage": "https://github.com/mkwtys/bundle-size#readme",
   "keywords": [
     "bundle",

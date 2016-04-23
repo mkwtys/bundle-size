@@ -1,0 +1,34 @@
+{
+  "name": "bundle-size",
+  "description": "Show bundle file size of npm modules",
+  "version": "0.0.0",
+  "author": "mkwtys <mkwtys@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mkwtys/bundle-size/issues"
+  },
+  "dependencies": {
+    "browserify": "13.0.0",
+    "pretty-bytes": "3.0.1",
+    "through2": "2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/mkwtys/bundle-size#readme",
+  "keywords": [
+    "bundle",
+    "size"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkwtys/bundle-size.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

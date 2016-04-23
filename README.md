@@ -21,3 +21,7 @@ bundleSize('react', 'react-dom').then((results) => {
 //   min: '353.59 kB',
 //   minGzip: '102.81 kB' }
 ```
+
+## License
+
+MIT

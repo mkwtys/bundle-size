@@ -7,7 +7,8 @@ describe('bundle-bytes', function() {
       assert.deepEqual(results, {
         modules: ['./example/noop'],
         bundle: 566,
-        minify: 557
+        min: 557,
+        minGzip: 464
       });
     });
   });

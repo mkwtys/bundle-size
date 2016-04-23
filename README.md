@@ -13,8 +13,11 @@ $ npm install --save bundle-size
 ```js
 const bundleSize = require('bundle-size');
 
-bundleSize('react').then((results) => {
+bundleSize('react', 'react-dom').then((results) => {
   console.log(results);
 });
-//-> { modules: 'react', bundle: '116.39 kB', minify: '57.91 kB' }
+// { modules: 'react,react-dom',
+//   bundle: '675.74 kB',
+//   min: '353.59 kB',
+//   minGzip: '102.81 kB' }
 ```

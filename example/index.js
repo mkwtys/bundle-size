@@ -1,6 +1,6 @@
 'use strict';
 
-const bundleSize = require('../');
+const bundleSize = require('../lib/');
 
 bundleSize(['react', 'react-dom']).then((results) => {
   console.log(results);

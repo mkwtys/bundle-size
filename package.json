@@ -23,7 +23,7 @@
     "size"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkwtys/bundle-size.git"

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "browserify": "13.0.0",
+    "envify": "3.4.0",
     "pretty-bytes": "3.0.1",
     "uglify-js": "2.6.2"
   },
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/mkwtys/bundle-size#readme",
   "keywords": [
     "bundle",
+    "envify",
     "gzip",
     "size",
     "uglify"

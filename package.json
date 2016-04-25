@@ -24,6 +24,7 @@
   "homepage": "https://github.com/mkwtys/bundle-size#readme",
   "keywords": [
     "bundle",
+    "envify",
     "gzip",
     "size",
     "uglify"

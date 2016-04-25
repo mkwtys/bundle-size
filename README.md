@@ -1,4 +1,4 @@
-# bundle-size
+# bundle-size [![Build Status](https://travis-ci.org/mkwtys/bundle-size.svg?branch=master)](https://travis-ci.org/mkwtys/bundle-size)
 
 Show bundle file size of npm modules
 

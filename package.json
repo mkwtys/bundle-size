@@ -1,7 +1,7 @@
 {
   "name": "bundle-size",
   "description": "Show bundle file size of npm modules",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "mkwtys <mkwtys@gmail.com>",
   "bugs": {
     "url": "https://github.com/mkwtys/bundle-size/issues"

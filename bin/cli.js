@@ -3,6 +3,7 @@
 
 const minimist = require("minimist");
 const pkg = require("../package.json");
+const bundleSize = require("../lib");
 
 const argv = minimist(process.argv.slice(2), {
   boolean: [
@@ -24,7 +25,7 @@ function showHelp() {
 ${pkg.description}
 
 Usage
-  ${Object.keys(pkg.bin)[0]} [options]
+  ${Object.keys(pkg.bin)[0]} [modules]
 
 Options
   -h, --help       Show help.
@@ -42,4 +43,10 @@ if (argv.help) {
 
 if (argv.version) {
   showVersion();
+}
+
+if (argv._.length > 0) {
+  bundleSize(argv._).then((value) => {
+    console.log(value);
+  });
 }

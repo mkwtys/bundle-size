@@ -32,6 +32,20 @@ bundleSize('react', 'react-dom').then((results) => {
 //     env: 'production' } ]
 ```
 
+## CLI
+
+```sh
+$ bundle-size --help
+Show bundle file size of npm modules
+
+Usage
+  bundle-size [modules]
+
+Options
+  -h, --help       Show help.
+  -v, --version    Print version.
+```
+
 ## License
 
 MIT

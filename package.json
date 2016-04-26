@@ -3,12 +3,16 @@
   "description": "Show bundle file size of npm modules",
   "version": "0.3.2",
   "author": "mkwtys <mkwtys@gmail.com>",
+  "bin": {
+    "cli": "bin/cli.js"
+  },
   "bugs": {
     "url": "https://github.com/mkwtys/bundle-size/issues"
   },
   "dependencies": {
     "browserify": "13.0.0",
     "envify": "3.4.0",
+    "minimist": "1.2.0",
     "pretty-bytes": "3.0.1",
     "uglify-js": "2.6.2"
   },
@@ -19,7 +23,8 @@
     "test": "test"
   },
   "files": [
-    "lib/"
+    "bin",
+    "lib"
   ],
   "homepage": "https://github.com/mkwtys/bundle-size#readme",
   "keywords": [

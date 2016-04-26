@@ -25,7 +25,7 @@ function showHelp() {
 ${pkg.description}
 
 Usage
-  ${Object.keys(pkg.bin)[0]} [modules]
+  ${Object.keys(pkg.bin)[0]} [packages]
 
 Options
   -h, --help       Show help.

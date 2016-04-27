@@ -7,11 +7,17 @@ const bundleSize = require("../lib");
 
 const argv = minimist(process.argv.slice(2), {
   boolean: [
+    "env",
     "help",
     "version"
   ],
+  string: [
+    "reporter"
+  ],
   alias: {
+    "e": "env",
     "h": "help",
+    "r": "reporter",
     "v": "version"
   },
   default: {
@@ -19,6 +25,12 @@ const argv = minimist(process.argv.slice(2), {
     "version": false
   }
 });
+
+function main() {
+  bundleSize(argv._).then((value) => {
+    console.log(value);
+  });
+}
 
 function showHelp() {
   console.log(`
@@ -28,8 +40,10 @@ Usage
   ${Object.keys(pkg.bin)[0]} [packages]
 
 Options
-  -h, --help       Show help.
-  -v, --version    Print version.
+  -e, --env         env flag
+  -h, --help        show help
+  -r, --reporter    output style
+  -v, --version     print version
 `);
 }
 
@@ -46,7 +60,5 @@ if (argv.version) {
 }
 
 if (argv._.length > 0) {
-  bundleSize(argv._).then((value) => {
-    console.log(value);
-  });
+  main();
 }

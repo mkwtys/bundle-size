@@ -7,11 +7,11 @@ const bundleSize = require("../lib");
 
 const argv = minimist(process.argv.slice(2), {
   boolean: [
-    "env",
     "help",
     "version"
   ],
   string: [
+    "env",
     "reporter"
   ],
   alias: {

@@ -42,8 +42,18 @@ Usage
   bundle-size [packages]
 
 Options
-  -h, --help       Show help.
-  -v, --version    Print version.
+  -e, --env         set NODE_ENV
+  -h, --help        show help
+  -r, --reporter    output style
+  -v, --version     print version
+```
+
+### Example
+
+```sh
+bundle-size react
+bundle-size react --env development
+bundle-size react -e development -e production
 ```
 
 ## License

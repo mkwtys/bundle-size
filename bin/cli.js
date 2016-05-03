@@ -42,7 +42,7 @@ Usage
   ${Object.keys(pkg.bin)[0]} [packages]
 
 Options
-  -e, --env         env flag
+  -e, --env         set NODE_ENV
   -h, --help        show help
   -r, --reporter    output style
   -v, --version     print version

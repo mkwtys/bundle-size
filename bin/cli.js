@@ -39,7 +39,7 @@ function showHelp() {
 ${pkg.description}
 
 Usage
-  ${Object.keys(pkg.bin)[0]} [packages]
+  ${Object.keys(pkg.bin)[0]} [packages] [options]
 
 Options
   -e, --env         set NODE_ENV

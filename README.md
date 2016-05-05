@@ -13,7 +13,7 @@ $ npm install bundle-size
 ```js
 const bundleSize = require('bundle-size');
 
-bundleSize('react', 'react-dom').then((results) => {
+bundleSize(['react', 'react-dom'], { env: ['development', 'production'] }).then((results) => {
   console.log(results);
 });
 // [ { packages: 'react,react-dom',

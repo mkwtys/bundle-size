@@ -2,7 +2,7 @@
 
 const bundleSize = require('../lib/');
 
-bundleSize(['react', 'react-dom']).then((results) => {
+bundleSize(['react', 'react-dom'], { env: ['development', 'production'] }).then((results) => {
   console.log(results);
 });
 // [ { packages: 'react,react-dom',

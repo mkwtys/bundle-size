@@ -43,18 +43,18 @@ bundleSize(['react', 'react-dom'], { env: ['development', 'production'] }).then(
   console.log(results);
 });
 // [ { packages: 'react,react-dom',
-//     bundle: '675.74 kB',
-//     min: '353.59 kB',
-//     gzip: '102.81 kB' },
+//     bundle: '714.04 kB',
+//     min: '380.71 kB',
+//     gzip: '108.66 kB' },
 //   { packages: 'react,react-dom',
-//     bundle: '666.74 kB',
-//     min: '333.66 kB',
-//     gzip: '100.11 kB',
+//     bundle: '703.73 kB',
+//     min: '354.37 kB',
+//     gzip: '105.38 kB',
 //     env: 'development' },
 //   { packages: 'react,react-dom',
-//     bundle: '666.42 kB',
-//     min: '275.56 kB',
-//     gzip: '78.81 kB',
+//     bundle: '703.33 kB',
+//     min: '282.78 kB',
+//     gzip: '81.18 kB',
 //     env: 'production' } ]
 ```
 

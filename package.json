@@ -1,7 +1,7 @@
 {
   "name": "bundle-size",
   "description": "Show bundle file size of npm packages",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "author": "mkwtys <mkwtys@gmail.com>",
   "bin": {
     "bundle-size": "bin/cli.js"

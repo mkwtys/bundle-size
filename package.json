@@ -13,12 +13,11 @@
     "browserify": "13.0.1",
     "envify": "3.4.1",
     "minimist": "1.2.0",
-    "mocha": "2.5.3",
     "pretty-bytes": "3.0.1",
     "uglify-js": "2.7.0"
   },
   "devDependencies": {
-    "mocha": "2.4.5"
+    "mocha": "2.5.3"
   },
   "directories": {
     "test": "test"

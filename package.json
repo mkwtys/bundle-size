@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "browserify": "13.0.1",
+    "cli-table2": "0.2.0",
     "envify": "3.4.1",
     "minimist": "1.2.0",
     "pretty-bytes": "3.0.1",

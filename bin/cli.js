@@ -28,7 +28,8 @@ const argv = minimist(process.argv.slice(2), {
 
 function main() {
   bundleSize(argv._, {
-    env: argv.env
+    env: argv.env,
+    reporter: argv.reporter
   }).then((value) => {
     console.log(value);
   });

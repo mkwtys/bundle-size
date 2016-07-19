@@ -22,7 +22,7 @@ Usage
 Options
   -e, --env         set NODE_ENV
   -h, --help        show help
-  -r, --reporter    output style
+  -r, --reporter    output style [json]
   -v, --version     print version
 ```
 

@@ -33,4 +33,14 @@ describe('bundle-bytes', function() {
       assert.equal(results.env, 'production');
     });
   });
+
+  it('multi files', function() {
+    return bundleBytes(['./test/noop', './test/noop2']).then(function(results) {
+      assert(Array.isArray(results.packages));
+      assert.deepEqual(results.packages, [ './test/noop', './test/noop2' ]);
+      assert(results.bundle);
+      assert(results.min);
+      assert(results.gzip);
+    });
+  });
 });

@@ -45,7 +45,7 @@
     "url": "git+https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
-    "cover": "nyc --reporter=lcov --reporter=text npm test",
-    "test": "mocha"
+    "cover": "npm t && nyc report --reporter=lcov --reporter=text",
+    "test": "nyc -s mocha"
   }
 }

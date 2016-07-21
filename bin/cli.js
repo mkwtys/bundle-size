@@ -2,9 +2,11 @@
 'use strict';
 
 const minimist = require("minimist");
+const ora = require('ora');
 const pkg = require("../package.json");
 const bundleSize = require("../lib");
 
+const spinner = ora(`bundle packages`);
 const argv = minimist(process.argv.slice(2), {
   boolean: [
     "help",
@@ -27,10 +29,12 @@ const argv = minimist(process.argv.slice(2), {
 });
 
 function main() {
+  spinner.start();
   bundleSize(argv._, {
     env: argv.env,
     reporter: argv.reporter
   }).then((value) => {
+    spinner.stop();
     console.log(value);
   });
 }

@@ -19,7 +19,9 @@
     "uglify-js": "2.7.0"
   },
   "devDependencies": {
-    "mocha": "2.5.3"
+    "coveralls": "2.11.11",
+    "mocha": "2.5.3",
+    "nyc": "7.0.0"
   },
   "directories": {
     "test": "test"
@@ -43,6 +45,7 @@
     "url": "git+https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
-    "test": "mocha"
+    "cover": "npm t && nyc report --reporter=lcov --reporter=text",
+    "test": "nyc -s mocha"
   }
 }

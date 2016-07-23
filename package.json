@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "babel-preset-power-assert": "1.0.0",
-    "babel-register": "6.9.0",
+    "babel-register": "6.11.5",
     "coveralls": "2.11.11",
     "mocha": "2.5.3",
     "nyc": "7.0.0",

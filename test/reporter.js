@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('power-assert');
 const reporter = require('../lib/reporter');
 
 describe('reporter', function() {

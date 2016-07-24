@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('power-assert');
 const bundleBytes = require('../lib/bundle-bytes');
 
 describe('bundle-bytes', function() {
@@ -19,7 +19,7 @@ describe('bundle-bytes', function() {
       assert(results.bundle);
       assert(results.min);
       assert(results.gzip);
-      assert.equal(results.env, 'development');
+      assert(results.env === 'development');
     });
   });
 
@@ -30,7 +30,7 @@ describe('bundle-bytes', function() {
       assert(results.bundle);
       assert(results.min);
       assert(results.gzip);
-      assert.equal(results.env, 'production');
+      assert(results.env === 'production');
     });
   });
 

@@ -1,30 +1,30 @@
 #! /usr/bin/env node
 'use strict';
 
-const minimist = require("minimist");
+const minimist = require('minimist');
 const ora = require('ora');
-const pkg = require("../package.json");
-const bundleSize = require("../lib");
+const pkg = require('../package.json');
+const bundleSize = require('../lib');
 
 const spinner = ora(`bundle packages`);
 const argv = minimist(process.argv.slice(2), {
   boolean: [
-    "help",
-    "version"
+    'help',
+    'version'
   ],
   string: [
-    "env",
-    "reporter"
+    'env',
+    'reporter'
   ],
   alias: {
-    "e": "env",
-    "h": "help",
-    "r": "reporter",
-    "v": "version"
+    'e': 'env',
+    'h': 'help',
+    'r': 'reporter',
+    'v': 'version'
   },
   default: {
-    "help": false,
-    "version": false
+    'help': false,
+    'version': false
   }
 });
 

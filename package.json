@@ -22,7 +22,7 @@
     "coveralls": "2.11.11",
     "intelli-espower-loader": "1.0.1",
     "mocha": "2.5.3",
-    "nyc": "7.0.0",
+    "nyc": "7.1.0",
     "power-assert": "1.4.1"
   },
   "directories": {

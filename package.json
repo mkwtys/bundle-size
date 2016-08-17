@@ -16,7 +16,7 @@
     "minimist": "1.2.0",
     "ora": "0.3.0",
     "pretty-bytes": "3.0.1",
-    "uglify-js": "2.7.1"
+    "uglify-js": "2.7.2"
   },
   "devDependencies": {
     "coveralls": "2.11.12",

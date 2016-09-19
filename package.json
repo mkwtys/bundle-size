@@ -19,7 +19,7 @@
     "uglify-js": "2.7.3"
   },
   "devDependencies": {
-    "coveralls": "2.11.13",
+    "coveralls": "2.11.14",
     "intelli-espower-loader": "1.0.1",
     "mocha": "3.0.2",
     "nyc": "8.3.0",

@@ -12,7 +12,7 @@
   "dependencies": {
     "browserify": "13.1.1",
     "cli-table2": "0.2.0",
-    "envify": "3.4.1",
+    "envify": "4.0.0",
     "minimist": "1.2.0",
     "ora": "0.3.0",
     "pretty-bytes": "4.0.2",

@@ -4,5 +4,4 @@ node_js:
   - '7'
   - '6'
   - '4'
-cache: yarn
 after_success: nyc report --reporter=text-lcov | coveralls

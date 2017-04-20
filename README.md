@@ -4,6 +4,8 @@
 
 # bundle-size
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mkwtys/bundle-size.svg)](https://greenkeeper.io/)
+
 Show bundle file size of npm packages
 
 ## Installation

@@ -47,12 +47,12 @@ bundleSize(['react', 'redux'], { env: ['development', 'production'] }).then((res
   console.log(results);
 });
 
-// react@15.2.1, redux@3.5.2
+// react@15.5.4, redux@3.6.0
 //
-// env          bundle     minify    gzip
-// --           155.65 kB  78.43 kB  24.78 kB
-// development  150.89 kB  71.58 kB  23.54 kB
-// production   150.81 kB  57.87 kB  18.28 kB
+// env          bundle  minify   gzip
+// --           178 kB  89.8 kB  28.2 kB
+// development  176 kB  84.2 kB  27.6 kB
+// production   176 kB  67 kB    21.2 kB
 ```
 
 ## License

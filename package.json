@@ -22,7 +22,7 @@
     "intelli-espower-loader": "1.0.1",
     "mocha": "3.4.2",
     "nyc": "11.0.2",
-    "power-assert": "1.4.3"
+    "power-assert": "1.4.4"
   },
   "directories": {
     "test": "test"

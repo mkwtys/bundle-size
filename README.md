@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/mkwtys/bundle-size.svg?branch=master)](https://travis-ci.org/mkwtys/bundle-size)
 [![codecov](https://codecov.io/gh/mkwtys/bundle-size/branch/master/graph/badge.svg)](https://codecov.io/gh/mkwtys/bundle-size)
-[![Code Climate](https://codeclimate.com/github/mkwtys/bundle-size/badges/gpa.svg)](https://codeclimate.com/github/mkwtys/bundle-size)
 
 # bundle-size
 

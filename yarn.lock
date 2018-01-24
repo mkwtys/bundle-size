@@ -301,9 +301,9 @@ browserify-zlib@~0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserify@15.1.0:
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/browserify/-/browserify-15.1.0.tgz#986bfa20c5ab339279190e03a59ef5f5c2c78d18"
+browserify@15.2.0:
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/browserify/-/browserify-15.2.0.tgz#1e121ba1fa72cf9fd2d8df002f8674b68b45df89"
   dependencies:
     JSONStream "^1.0.3"
     assert "^1.4.0"
@@ -328,6 +328,7 @@ browserify@15.1.0:
     inherits "~2.0.1"
     insert-module-globals "^7.0.0"
     labeled-stream-splicer "^2.0.0"
+    mkdirp "^0.5.0"
     module-deps "^5.0.1"
     os-browserify "~0.3.0"
     parents "^1.0.1"

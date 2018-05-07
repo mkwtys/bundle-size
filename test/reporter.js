@@ -3,7 +3,7 @@ const reporter = require('../lib/reporter');
 
 describe('reporter', function() {
   it('no data', function() {
-    assert.throws(() => { reporter() }, 'no data');
+    assert.throws(() => { reporter() });
   });
 
   it('empty', function() {

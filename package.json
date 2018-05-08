@@ -16,7 +16,7 @@
     "minimist": "1.2.0",
     "ora": "2.1.0",
     "pretty-bytes": "5.0.0",
-    "uglify-js": "3.3.23"
+    "uglify-js": "3.3.24"
   },
   "devDependencies": {
     "intelli-espower-loader": "1.0.1",

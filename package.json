@@ -31,7 +31,7 @@
     "bin",
     "lib"
   ],
-  "homepage": "https://github.com/mkwtys/bundle-size#readme",
+  "homepage": "https://github.com/mkwtys/bundle-size",
   "keywords": [
     "bundle",
     "envify",
@@ -43,7 +43,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkwtys/bundle-size.git"
+    "url": "https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
     "cover": "npm t && nyc report --reporter=lcov --reporter=text",

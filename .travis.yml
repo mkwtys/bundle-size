@@ -4,6 +4,7 @@ node_js:
   - '6'
   - '8'
   - '10'
+  - '11'
 dist: trusty
 before_script: npm i codecov
 after_success: nyc report --reporter=lcov > coverage.lcov && codecov

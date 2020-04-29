@@ -19,10 +19,7 @@
     "uglify-js": "3.8.0"
   },
   "devDependencies": {
-    "intelli-espower-loader": "1.0.1",
-    "mocha": "6.2.3",
-    "nyc": "15.0.1",
-    "power-assert": "1.6.1"
+    "jest": "25.5.0"
   },
   "directories": {
     "test": "test"
@@ -46,7 +43,17 @@
     "url": "https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
-    "cover": "npm t && nyc report --reporter=lcov --reporter=text",
-    "test": "nyc -s mocha --timeout 10000 --require intelli-espower-loader"
+    "coverage": "jest --coverage",
+    "test": "jest"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "fixtures"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "fixtures"
+    ]
   }
 }

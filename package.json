@@ -19,7 +19,7 @@
     "uglify-js": "3.9.2"
   },
   "devDependencies": {
-    "jest": "25.5.4"
+    "jest": "26.0.0"
   },
   "directories": {
     "test": "test"

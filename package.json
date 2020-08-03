@@ -10,7 +10,7 @@
     "url": "https://github.com/mkwtys/bundle-size/issues"
   },
   "dependencies": {
-    "browserify": "16.5.1",
+    "browserify": "16.5.2",
     "cli-table3": "0.6.0",
     "envify": "4.1.0",
     "minimist": "1.2.5",

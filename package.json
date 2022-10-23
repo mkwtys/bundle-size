@@ -16,7 +16,7 @@
     "minimist": "1.2.7",
     "ora": "4.1.1",
     "pretty-bytes": "6.0.0",
-    "uglify-js": "3.17.3"
+    "uglify-js": "3.17.4"
   },
   "devDependencies": {
     "jest": "29.1.2"

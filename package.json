@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "browserify": "17.0.0",
-    "cli-table3": "0.6.3",
+    "cli-table3": "0.6.4",
     "envify": "4.1.0",
     "minimist": "1.2.8",
     "ora": "8.0.1",

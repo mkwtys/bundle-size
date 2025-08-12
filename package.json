@@ -15,7 +15,7 @@
     "envify": "4.1.0",
     "minimist": "1.2.8",
     "ora": "8.0.1",
-    "pretty-bytes": "7.0.0",
+    "pretty-bytes": "7.0.1",
     "uglify-js": "3.19.3"
   },
   "devDependencies": {

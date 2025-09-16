@@ -14,7 +14,7 @@
     "cli-table3": "0.6.5",
     "envify": "4.1.0",
     "minimist": "1.2.8",
-    "ora": "8.0.1",
+    "ora": "9.0.0",
     "pretty-bytes": "7.0.1",
     "uglify-js": "3.19.3"
   },

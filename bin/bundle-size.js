@@ -1,9 +1,12 @@
 #! /usr/bin/env node
-'use strict';
 
-const minimist = require('minimist');
+import minimist from 'minimist';
+import ora from 'ora';
+import { createRequire } from 'module';
+import bundleSize from '../lib/index.js';
+
+const require = createRequire(import.meta.url);
 const pkg = require('../package.json');
-const bundleSize = require('../lib');
 
 const argv = minimist(process.argv.slice(2), {
   boolean: [
@@ -27,15 +30,19 @@ const argv = minimist(process.argv.slice(2), {
 });
 
 async function main() {
-  const { default: ora } = await import('ora');
   const spinner = ora('bundle packages').start();
-  bundleSize(argv._, {
-    env: argv.env,
-    reporter: argv.reporter
-  }).then((value) => {
+  try {
+    const value = await bundleSize(argv._, {
+      env: argv.env,
+      reporter: argv.reporter
+    });
     spinner.stop();
     console.log(value);
-  });
+  } catch (err) {
+    spinner.stop();
+    console.error(err);
+    process.exit(1);
+  }
 }
 
 function showHelp() {

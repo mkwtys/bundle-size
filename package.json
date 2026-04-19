@@ -43,8 +43,8 @@
     "url": "https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
-    "coverage": "jest --coverage",
-    "test": "jest"
+    "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "jest": {
     "coveragePathIgnorePatterns": [

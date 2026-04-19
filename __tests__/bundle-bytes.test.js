@@ -1,56 +1,44 @@
-const assert = require("assert");
-const bundleBytes = require("../lib/bundle-bytes");
+import { describe, it, expect } from 'vitest';
+import bundleBytes from '../lib/bundle-bytes';
 
-describe("bundle-bytes", function () {
-  it("noop - browser-pack code only", function () {
-    return bundleBytes("./__tests__/fixtures/noop").then(function (results) {
-      assert(Array.isArray(results.packages));
-      assert.deepEqual(results.packages, ["./__tests__/fixtures/noop"]);
-      assert(results.bundle);
-      assert(results.min);
-      assert(results.gzip);
-    });
+describe('bundle-bytes', () => {
+  it('noop - browser-pack code only', async () => {
+    const results = await bundleBytes('./__tests__/fixtures/noop');
+    expect(results.packages).toEqual(['./__tests__/fixtures/noop']);
+    expect(results.bundle).toBeTruthy();
+    expect(results.min).toBeTruthy();
+    expect(results.gzip).toBeTruthy();
   });
 
-  it("noop - env:development", function () {
-    return bundleBytes("./__tests__/fixtures/noop", "development").then(
-      function (results) {
-        assert(Array.isArray(results.packages));
-        assert.deepEqual(results.packages, ["./__tests__/fixtures/noop"]);
-        assert(results.bundle);
-        assert(results.min);
-        assert(results.gzip);
-        assert(results.env === "development");
-      }
-    );
+  it('noop - env:development', async () => {
+    const results = await bundleBytes('./__tests__/fixtures/noop', 'development');
+    expect(results.packages).toEqual(['./__tests__/fixtures/noop']);
+    expect(results.bundle).toBeTruthy();
+    expect(results.min).toBeTruthy();
+    expect(results.gzip).toBeTruthy();
+    expect(results.env).toBe('development');
   });
 
-  it("noop - env:production", function () {
-    return bundleBytes("./__tests__/fixtures/noop", "production").then(
-      function (results) {
-        assert(Array.isArray(results.packages));
-        assert.deepEqual(results.packages, ["./__tests__/fixtures/noop"]);
-        assert(results.bundle);
-        assert(results.min);
-        assert(results.gzip);
-        assert(results.env === "production");
-      }
-    );
+  it('noop - env:production', async () => {
+    const results = await bundleBytes('./__tests__/fixtures/noop', 'production');
+    expect(results.packages).toEqual(['./__tests__/fixtures/noop']);
+    expect(results.bundle).toBeTruthy();
+    expect(results.min).toBeTruthy();
+    expect(results.gzip).toBeTruthy();
+    expect(results.env).toBe('production');
   });
 
-  it("multi files", function () {
-    return bundleBytes([
-      "./__tests__/fixtures/noop",
-      "./__tests__/fixtures/noop2",
-    ]).then(function (results) {
-      assert(Array.isArray(results.packages));
-      assert.deepEqual(results.packages, [
-        "./__tests__/fixtures/noop",
-        "./__tests__/fixtures/noop2",
-      ]);
-      assert(results.bundle);
-      assert(results.min);
-      assert(results.gzip);
-    });
+  it('multi files', async () => {
+    const results = await bundleBytes([
+      './__tests__/fixtures/noop',
+      './__tests__/fixtures/noop2',
+    ]);
+    expect(results.packages).toEqual([
+      './__tests__/fixtures/noop',
+      './__tests__/fixtures/noop2',
+    ]);
+    expect(results.bundle).toBeTruthy();
+    expect(results.min).toBeTruthy();
+    expect(results.gzip).toBeTruthy();
   });
 });

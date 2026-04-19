@@ -18,9 +18,6 @@
     "pretty-bytes": "7.1.0",
     "uglify-js": "3.19.3"
   },
-  "devDependencies": {
-    "jest": "30.3.0"
-  },
   "directories": {
     "test": "test"
   },
@@ -43,17 +40,11 @@
     "url": "https://github.com/mkwtys/bundle-size.git"
   },
   "scripts": {
-    "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "coverage": "vitest run --coverage",
+    "test": "vitest run"
   },
-  "jest": {
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "fixtures"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "fixtures"
-    ]
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.4",
+    "vitest": "4.1.4"
   }
 }
